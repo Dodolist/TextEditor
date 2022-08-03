@@ -3,6 +3,11 @@ body {
     box-sizing: border-box;
 }
 
+::selection {
+    color: #ffffffa0;
+    background-color: #04a3fb80;
+}
+
 .container {
     min-height: 100vh;
 
@@ -14,14 +19,15 @@ body {
 }
 
 
+/* Editor Style */
+
 .editor-menu {
     display: flex;
     flex-direction: row;
-
     padding: 4px 16px;
+    margin-bottom: 16px;
     background-color: #3E3E3E;
     border-radius: 4px;
-
     gap: 16px;
 }
 
@@ -60,12 +66,31 @@ button.active {
     color: #FFD600;
 }
 
-
-
 .select-font-size, .select-font-color{
     padding: 4px;
     border-radius: 4px;
     color: #ffffff;
     background-color: #1c1c1c;
     border: none;
+}
+
+
+
+/* Editor Style */
+
+.editor {
+    width: 100%;
+    min-height: 100%;
+    
+    color: #ffffff;
+    font-size: 24px;
+    caret-color: #04A3FB;
+    
+    line-height: 1.2;
+    border: none;
+    resize: none;
+}
+
+.editor:focus {
+    outline: none;
 }
