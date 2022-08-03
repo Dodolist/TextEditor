@@ -85,35 +85,30 @@ document.onkeydown = function(e) {
             console.log("ctrl + alt + q, RED");
             setFontColor('#FF414C');
             document.getElementById('select-font-color').style.backgroundColor="#FF414C";
-            document.getElementById('select-font-color').innerText = '';
             return false;
         }
         if (e.which == 87) {
             console.log("ctrl + alt + w, YELLOW");
             setFontColor('#FFB800');
             document.getElementById('select-font-color').style.backgroundColor="#FFB800";
-            document.getElementById('select-font-color').innerText = '';
             return false;
         }
         if (e.which == 69) {
             console.log("ctrl + alt + e, GREEN");
             setFontColor('#14FF00');
             document.getElementById('select-font-color').style.backgroundColor="#14FF00";
-            document.getElementById('select-font-color').innerText = '';
             return false;
         }
         if (e.which == 82) {
             console.log("ctrl + alt + r, BLUE");
             setFontColor('#0085FF');
             document.getElementById('select-font-color').style.backgroundColor="#0085FF";
-            document.getElementById('select-font-color').innerText = '';
             return false;
         }
         if (e.which == 84) {
             console.log("ctrl + alt + t, WHITE");
             setFontColor('#FFFFFF');
             document.getElementById('select-font-color').style.backgroundColor="#FFFFFF";
-            document.getElementById('select-font-color').innerText = '';
             return false;
         }
     }
