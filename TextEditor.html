@@ -1,14 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
     <head>
         <title>TextEditor</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1"
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="stylesheet" href="index.css"/>
         <script type="text/javascript" src="index.js"></script>
     </head>
     <body>
         <div class="container">
+            <div class="editor-menu">
+                <div class="text-edit">
+                    <button id="btn-bold">
+                        <b>B</b>
+                    </button>
+                    <button id="btn-italic">
+                        <i>I</i>
+                    </button>
+                    <button id="btn-underline">
+                        <u>U</u>
+                    </button>
+                    <button id="btn-strike">
+                        <s>S</s>
+                    </button>
+                </div>
+                <div class="list-edit">
+                    <button id="btn-ordered-list">
+                    OL
+                    </button>
+                    <button id="btn-unordered-list">
+                    UL
+                    </button>
+                </div>
+                <select id="select-font-size" class="select-font-size">
+                    <option value="1" selected>16px</option>
+                    <option value="2">20px</option>
+                    <option value="3">24px</option>
+                    <option value="4">28px</option>
+                    <option value="5">32px</option>
+                    <option value="6">36px</option>
+                    <option value="7">48px</option>
+                </select>
+                 <select id="select-font-color" class="select-font-color">
+                    <option value="">폰트 색상</option>
+                    <option value="#FF414C" style="background-color: #FF414C;"></option>
+                    <option value="#FFB800" style="background-color: #FFB800;"></option>
+                    <option value="#14FF00" style="background-color: #14FF00;"></option>
+                    <option value="#0085FF" style="background-color: #0085FF;"></option>
+                    <option value="#000000" style="background-color: #000000;"></option>
+                    <option value="#FFFFFF" style="background-color: #FFFFFF;"></option>
+                 </select>
+            </div>
         </div>
     </body>
 </html>

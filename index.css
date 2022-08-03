@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #1c1c1c;
+    padding: 100px 0 0 160px;
+}
+
+
+.editor-menu {
+    display: flex;
+    flex-direction: row;
+
+    padding: 4px 16px;
+    background-color: #3E3E3E;
+    border-radius: 4px;
+
+    gap: 16px;
+}
+
+.text-edit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 4px;
+    overflow: hidden;
+}
+.list-edit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.list-edit button {
+    border-radius: 4px;
+}
+
+button {
+    width: 40px;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    background-color: #1c1c1c;
+    padding: 4px 0;
+    
+}
+
+button.active {
+    color: #FFD600;
+}
+
+
+
+.select-font-size, .select-font-color{
+    padding: 4px;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #1c1c1c;
+    border: none;
+}
