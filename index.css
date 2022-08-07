@@ -121,6 +121,7 @@ font[size='7'] { font-size: 48px; }
     background-color: #606060;
     border-radius: 50%;
     cursor: pointer;
+    user-select: none;
 }
 
 .help:hover {
@@ -131,6 +132,7 @@ font[size='7'] { font-size: 48px; }
 }
 
 .guide {
+    z-index: 100;
     transition: all 0.5s;
     
     position: fixed;
@@ -142,7 +144,7 @@ font[size='7'] { font-size: 48px; }
     display: flex;
     flex-direction: column;
     background-color: #33333380;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
     border-radius: 40px;
     padding: 20px 28px;
 }
@@ -155,7 +157,7 @@ font[size='7'] { font-size: 48px; }
 }
 
 .title {
-    color: #ffffff;
+    color: #04a3fb;
     font-size: 24px;
     font-weight: bold;
 }
@@ -165,8 +167,25 @@ font[size='7'] { font-size: 48px; }
     font-size: 24px;
     cursor: pointer;
     color: #ffffff;
+
+    user-select: none;
 }
 
 .exit:hover {
     color: #cecece;
+}
+
+.black {
+    transition: all 0.5s;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: #00000080;
+
+    pointer-events: none;
+    opacity: 0;
 }
