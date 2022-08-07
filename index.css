@@ -154,17 +154,19 @@ font[size='7'] { font-size: 48px; }
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    margin-bottom: 40px;
 }
 
 .title {
     color: #04a3fb;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
 }
 
 .exit {
     background-color: transparent;
-    font-size: 24px;
+    font-size: 32px;
     cursor: pointer;
     color: #ffffff;
 
@@ -173,6 +175,27 @@ font[size='7'] { font-size: 48px; }
 
 .exit:hover {
     color: #cecece;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.wrap {
+    flex-grow: 1;
+}
+
+.name {
+    font-size: 24px;
+    color: #cecece;
+    margin-bottom: 8px;
+}
+
+li {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 4px;
 }
 
 .black {
