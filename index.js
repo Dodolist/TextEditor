@@ -122,12 +122,12 @@ const btnStrike = document.getElementById('btn-strike');
 const btnOrderedList = document.getElementById('btn-ordered-list');
 const btnUnorderedList = document.getElementById('btn-unordered-list');
 
-const fontSizeSelector = document.getElementById('select-font-size');
+const selectFontSize = document.getElementById('select-font-size');
 const fontSizeList = [16, 20, 24, 28, 32, 36, 48];
 const selectFontColor = document.getElementById('select-font-color');
 
 
-fontSizeSelector.addEventListener('change', function () {
+selectFontSize.addEventListener('change', function () {
     changeFontSize(this.value);
 });
 
@@ -252,7 +252,7 @@ function reportFont() {
         const fontSize = getComputedStyleProperty(containerEl, 'fontSize');
         const fontColor = getComputedStyleProperty(containerEl, 'color');
         const size = parseInt(fontSize.replace('px', ''));
-        fontSizeSelector.value = fontSizeList.indexOf(size) + 1;
+        selectFontSize.value = fontSizeList.indexOf(size) + 1;
         // fontName이 문자열 "폰트명"으로 오기 때문에 "를 제거해주는 코드 추가
         //fontColorSelector.value = rgbToHex(fontColor).toUpperCase();
     }
