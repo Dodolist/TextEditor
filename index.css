@@ -104,3 +104,69 @@ font[size='4'] { font-size: 28px; }
 font[size='5'] { font-size: 32px; }
 font[size='6'] { font-size: 36px; }
 font[size='7'] { font-size: 48px; }
+
+
+
+/* Help Style */
+
+.help {
+    transition: all 0.5s;
+    
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    width: 32px;
+    height: 32px;
+    font-weight: bold;
+    background-color: #606060;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.help:hover {
+    background-color: #a0a0a0;
+}
+.help:active {
+    background-color: #505050;
+}
+
+.guide {
+    transition: all 0.5s;
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: #33333380;
+    backdrop-filter: blur(20px);
+    border-radius: 40px;
+    padding: 20px 28px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.exit {
+    background-color: transparent;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.exit:hover {
+    color: #cecece;
+}

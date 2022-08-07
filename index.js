@@ -257,3 +257,17 @@ function reportFont() {
         //fontColorSelector.value = rgbToHex(fontColor).toUpperCase();
     }
 }
+
+
+
+function offDisplay() {
+    document.getElementById("help").style.transform = "translateY(0px)";
+    document.getElementById("offDisplay").style.opacity = "0";
+    document.getElementById("offDisplay").style.transform = "translate(-50%, 50%)";
+}
+
+function onDisplay() {
+    document.getElementById("help").style.transform = "translateY(-80px)";
+    document.getElementById("offDisplay").style.opacity = "1";
+    document.getElementById("offDisplay").style.transform = "translate(-50%, -50%)";
+}
